@@ -1,6 +1,6 @@
 > 아래의 객관식 문제에서 node/js dev console 이용하여 실행시킨 후 풀지 마세요. 직접 머리로, 손으로 계산하여 답 하셔야 합니다.
 
-ASNWER SHEET [LINK](https://forms.gle/oNJbSYq5GXn92L5D6)
+ASNWER SHEET [LINK](https://docs.google.com/forms/d/e/1FAIpQLSdk43f-mL1YCJuQ-Ghrr-nI1iaAuzQX3aATd0qq_JYBc0JvLg/viewform?usp=sf_link)
 
 # 01
 
@@ -57,6 +57,16 @@ var foo = add(1);
 foo(3);
 var total = foo(6);
 ```
+
+# 04
+
+The keyword or the property that you use to refer to an object through which they were invoked is \_\_\_\_?
+함수의 현재 실행 문맥이기도 한 이 것은?
+
+1. from
+2. to
+3. this
+4. object
 
 # 05
 
@@ -130,6 +140,42 @@ obj2.x = 20;
 
 var result = obj3.x + 10;
 ```
+
+# 10
+
+What is the Big O time complexity for searching for a value in an unsorted array?
+
+1. O(1) Constant
+2. O(log n) Logarithmatic
+3. O(n) Linear
+4. O(n^2)
+
+# 11
+
+What is the Big O time complexity for retrieving the value at a specific index in a linked list?
+
+1. O(1) Constant
+2. O(log n) Logarithmatic
+3. O(n) Linear
+4. O(n^2)
+
+# 12
+
+What is the worst case Big O time complexity of inserting a value into a binary search tree?
+
+1. O(1) Constant
+2. O(log n) Logarithmatic
+3. O(n) Linear
+4. O(n^2)
+
+# 13
+
+What is the best case time complexity of looking up the value of a key in a hash table?
+
+1. O(1) Constant
+2. O(log n) Logarithmatic
+3. O(n) Linear
+4. O(n^2)
 
 # 14
 
