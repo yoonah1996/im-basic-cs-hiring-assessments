@@ -34,11 +34,19 @@ var Tree = function(value) {
 };
 
 Tree.prototype.addChild = function(child) {
-  // your code here
+  let newTree = new Tree(child);
+  this.children.push(newTree);
+  return newTree;
 };
 
 Tree.prototype.map = function(callback) {
-  // your code here
+  let newTree = new Tree(callback(this.value));
+  if(this.children.length !== 0){
+    for(let i=0; i<this.children.length; i++){
+      newTree.children[i] = this.children[i].map(callback);
+    }
+  }
+  return newTree;
 };
 
 module.exports = Tree;

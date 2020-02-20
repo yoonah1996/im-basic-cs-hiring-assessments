@@ -5,21 +5,21 @@
 */
 var TimeComplexity = {
   FIX_ME: 'wrong answer',
-  CONSTANT: 'constant',
-  LOGARITHMIC: 'logarithmic',
-  LINEAR: 'linear',
-  QUADRATIC: 'quadratic',
-  EXPONENTIAL: 'exponential'
+  CONSTANT: 'constant', //O(1)
+  LOGARITHMIC: 'logarithmic', // O(log n) ex)binary seach(이진검색)
+  LINEAR: 'linear', // O(n)
+  QUADRATIC: 'quadratic', //O(n제곱) O(nm)
+  EXPONENTIAL: 'exponential'  //O(2의 n제곱) ex)피보나치, 트리
 };
 exports.TimeComplexity = TimeComplexity;
 
 // Problem 1: Sum the squares of the values in a given array.
 
 /*
- * Complexity:
+ * Complexity: 들어오는 array길이만큼 시간이 걸리기 때문에...
  */
 
-exports.sumSquaresTimeComplexity = TimeComplexity.FIX_ME; // TODO: Update this constant
+exports.sumSquaresTimeComplexity = TimeComplexity.LINEAR; // TODO: Update this constant
 
 var sumSquares = function(array) {
   return array.reduce(function(memo, val) {
@@ -31,10 +31,10 @@ var sumSquares = function(array) {
 // Problem 2: Calculate the n-th power of given number.
 
 /*
- * Complexity:
+ * Complexity: 0일경우 짝수일경우 홀수일 경우 나눠서 계산...
  */
 /*START SOLUTION*///O(lg(exponent))/*END SOLUTION*/
-exports.nthPowerTimeComplexity = TimeComplexity.FIX_ME; // TODO: Update this constant
+exports.nthPowerTimeComplexity = TimeComplexity.LOGARITHMIC; // TODO: Update this constant
 
 var nthPower = function(base, exponent) {
   // Base case:
@@ -53,10 +53,10 @@ var nthPower = function(base, exponent) {
 // Problem 3: Generate every sequence of throws for an n-round rock-paper-scissors game.
 
 /*
- * Complexity:
+ * Complexity: 각 경우의 수를 트리식으로 검색, 입력해서 모든 경우의 수를 찾으므로...
  */
 /*START SOLUTION*///O(3^n)/*END SOLUTION*/
-exports.rockPaperScissorsTimeComplexity = TimeComplexity.FIX_ME; // TODO: Update this constant
+exports.rockPaperScissorsTimeComplexity = TimeComplexity.EXPONENTIAL; // TODO: Update this constant
 
 var rockPaperScissors = function(rounds) {
   var sequences = [];
